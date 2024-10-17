@@ -1,0 +1,123 @@
+/* Import Open Sans from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+/* Apply global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ensures padding and borders are included in element's total width and height */
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif; /* Set the font for the entire body */
+    line-height: 1.6; /* Adjust line height for better readability */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 1rem; /* Add some spacing below headings */
+}
+
+p {
+    margin-bottom: 1rem; /* Add spacing below paragraphs */
+}
+
+:root {
+  --main-color: #6f7dff; /* Use a semicolon here */
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  max-height: 56px;
+  height: 100%;
+  width: 100%;
+  padding: 12px;
+  background-color: black;
+  align-items: center;
+}
+
+header .logo{
+  color: white;
+  font-size: 32px;
+  font-weight: 700  ;
+  text-decoration: none;
+}
+
+ .navigator ul{
+  display: flex;
+
+  gap: 12px;
+}
+
+
+.navigator ul li a{
+  color: black;
+}
+.navigator ul li:hover{
+  background-color: var(--main-color);
+}
+.navigator ul li{
+  padding: 10px;
+}
+
+nav ul {
+}
+
+.contacts{
+display: flex;
+justify-content: space-between;
+padding: 0px 12px;
+
+}
+
+header nav {
+  display: flex;
+  gap: 12px;
+}
+
+.contacts a{
+  color: white;
+}
+
+footer{
+  margin-top: 200px;
+  background-color: black;
+  color: white;
+}
+
+
+.navigator ul{
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+main{
+  margin: auto;
+  max-width: 1140px;
+}
+
+
+main div {
+  width: 100%;
+}
+
+main div img{
+  width: 100%;
+  height: 100%s;
+}
+
+.our-team div div{
+  width: 126px;
+  height: 126px;
+  border-radius: 100%;
+  overflow: hidden;
+}
+.our-team div div img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
