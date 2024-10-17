@@ -1,75 +1,84 @@
 /* Import Open Sans from Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
 
 /* Apply global styles */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box; /* Ensures padding and borders are included in element's total width and height */
-    text-decoration: none;
-    list-style: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Ensures padding and borders are included in element's total width and height */
+  text-decoration: none;
+  list-style: none;
+}
+
+.container {
+  max-width: 70%;
+  margin: 0 auto;
 }
 
 body {
-    font-family: 'Open Sans', sans-serif; /* Set the font for the entire body */
-    line-height: 1.6; /* Adjust line height for better readability */
+  font-family: "Open Sans", sans-serif; /* Set the font for the entire body */
+  line-height: 1.6; /* Adjust line height for better readability */
 }
 
-h1, h2, h3, h4, h5, h6 {
-    margin-bottom: 1rem; /* Add some spacing below headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 1rem; /* Add some spacing below headings */
 }
 
 p {
-    margin-bottom: 1rem; /* Add spacing below paragraphs */
+  margin-bottom: 1rem; /* Add spacing below paragraphs */
 }
 
 :root {
   --main-color: #6f7dff; /* Use a semicolon here */
 }
 
-header{
+header {
   display: flex;
   justify-content: space-between;
   max-height: 56px;
   height: 100%;
   width: 100%;
   padding: 12px;
-  background-color: black;
+  /* background-color: black; */
+  background-color: #343434;
   align-items: center;
 }
 
-header .logo{
+header .logo {
   color: white;
   font-size: 32px;
-  font-weight: 700  ;
+  font-weight: 700;
   text-decoration: none;
 }
 
- .navigator ul{
+.navigator ul {
   display: flex;
 
   gap: 12px;
 }
 
-
-.navigator ul li a{
+.navigator ul li a {
   color: black;
 }
-.navigator ul li:hover{
+.navigator ul li:hover {
   background-color: var(--main-color);
 }
-.navigator ul li{
+.navigator ul li {
   padding: 10px;
 }
 
 nav ul {
 }
 
-.contacts{
-display: flex;
-justify-content: space-between;
-padding: 0px 12px;
-
+.contacts {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 12px;
 }
 
 header nav {
@@ -77,47 +86,150 @@ header nav {
   gap: 12px;
 }
 
-.contacts a{
+.contacts a {
   color: white;
 }
 
-footer{
+footer {
   margin-top: 200px;
   background-color: black;
   color: white;
 }
 
-
-.navigator ul{
+.navigator ul {
   color: white;
   display: flex;
   justify-content: space-between;
 }
 
-
-main{
+main {
   margin: auto;
   max-width: 1140px;
 }
-
 
 main div {
   width: 100%;
 }
 
-main div img{
+main div img {
   width: 100%;
   height: 100%s;
 }
 
-.our-team div div{
+.our-team div div {
   width: 126px;
   height: 126px;
   border-radius: 100%;
   overflow: hidden;
 }
-.our-team div div img{
+.our-team div div img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+/* ============================================================================================================ */
+.header__container {
+  width: 100%;
+  height: 79px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  padding: 10px 0;
+}
+
+.header__container ul {
+  display: flex;
+  column-gap: 25%;
+  font-family: sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.btns {
+  display: flex;
+  column-gap: 10%;
+}
+
+.btn-white {
+  color: #333;
+  background-color: #fff;
+  border: 1px solid #fff;
+  cursor: pointer;
+  font-size: 16px;
+  width: 86px;
+  height: 40px;
+  border-radius: 5px;
+}
+.btn-red {
+  width: 153px;
+  height: 40px;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 5px;
+  background-color: #e06149;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+/* =============================================================cards===================================== */
+.box-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 20px;
+  row-gap: 20px;
+}
+.card {
+  background-color: #fff;
+  max-width: 333px;
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #e3e3e3;
+}
+
+.box {
+  padding: 20px;
+}
+.banner_img {
+  width: 100%;
+  height: 116px;
+}
+
+.card h2 {
+  font-size: 17px;
+  font-family: sans-serif;
+  color: #333;
+  font-weight: 400;
+}
+
+.card p {
+  font-size: 15px;
+  font-weight: 200;
+  color: #6e6e6e;
+  font-family: sans-serif;
+}
+.views {
+  display: flex;
+  column-gap: 8px;
+  font-size: 15px;
+  font-weight: 200;
+  color: #6e6e6e;
+}
+.views img {
+  width: 16px;
+  height: 15px;
+}
+.date {
+  display: flex;
+  column-gap: 8px;
+  font-size: 15px;
+  font-weight: 200;
+  color: #6e6e6e;
+}
+.date img {
+  width: 16px;
+  height: 15px;
 }
