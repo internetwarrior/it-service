@@ -4,15 +4,16 @@ import eye from "../icons/visibility_20dp_BLACK_FILL0_wght400_GRAD0_opsz20.png";
 import watch from "../icons/pace_16dp_BLACK_FILL0_wght400_GRAD0_opsz20.png";
 
 const Cards = () => {
+  const CARD_IMG = 'https://images.unsplash.com/photo-1508780709619-79562169bc64?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fHRlY2h8ZW58MHx8MHx8fDA%3D'
+
   return (
+    
     <div className="card">
-      <img className="banner_img" src={IMG_URL} alt="" />
+      <img className="banner_img" src={CARD_IMG} alt="" />
       <div className="box">
-        <h2>Web Performance: Как ускорить загрузку веб-страниц</h2>
+        <h2>Название услуги</h2>
         <p>
-          Сегодня в мире веб-разработки скорость загрузки сайта играет решающую
-          роль в пользовательском опыте. Каждая лишняя секунда задержки приводит
-          к потерям пользователей, ухудшению позиций в поиске.
+          Описание услуги тд тп текс потом
         </p>
         <div className="views">
           <img src={eye} alt="" />

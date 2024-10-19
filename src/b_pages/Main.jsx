@@ -2,12 +2,17 @@ import React from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
 import { IMG_URL } from "../settings/global";
-import Cards from "./Cards";
+import Cards from "../a_components/Cards";
 
 function Main() {
   return (
     <main>
-      <Carousel>
+      
+      <div className="box-wrap">
+        <Cards />
+        <Cards />
+       
+        <Cards /><Carousel>
         <div>
           <img src={IMG_URL} />
           <p className="legend">Legend 1</p>
@@ -21,12 +26,6 @@ function Main() {
           <p className="legend">Legend 3</p>
         </div>
       </Carousel>
-      <div className="box-wrap">
-        <Cards />
-        <Cards />
-        <Cards />
-        <Cards />
-        <Cards />
         <Cards />
         <Cards />
         <Cards />
