@@ -236,3 +236,34 @@ main div img {
   width: 16px;
   height: 15px;
 }
+
+/* =============================================================================================================== */
+.containerDescription {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 50px;
+}
+.description img {
+  width: 713px;
+  height: 250px;
+}
+
+.description h2 {
+  font-size: 22px;
+  font-weight: 700;
+  margin: 10px 0;
+}
+
+.description p {
+  width: 713px;
+  line-height: 170%;
+  font-size: 16px;
+  color: #232323;
+}
+
+.description a {
+  color: #6f7dff;
+  font-size: 22px;
+  cursor: pointer;
+}
