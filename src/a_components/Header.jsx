@@ -23,7 +23,7 @@ function Header() {
       <header>
         <div className="header__container container">
           <a className="logo" href="/">
-            it-SERVICE
+            NoboxNews
           </a>
           <ul>
             <li>Справочники</li>
